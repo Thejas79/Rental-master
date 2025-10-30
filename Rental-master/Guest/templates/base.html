@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Rental Master</title>
         {% block head %}
         <title>
             Rental
@@ -23,6 +27,12 @@
         {% block style %}
         {% endblock %}
         {% endblock %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+<style>
+  body {
+    background-color: #add8e6; /* light blue */
+  }
+</style>
     </head>
     <body>
         {%block nav%}
@@ -72,9 +82,9 @@
                     <h3>Popular locations</h3>
                     <ul class="w3-ul w3-hoverable">
                         <li class="w3-padding-16">
-                            <span> Mumbai</span><br>
+                            <span> Bengaluru </span><br>
                             <span> Delhi</span><br>
-                            <span> Bagalore</span>
+                            <span> Mumbai</span>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +93,7 @@
                     <ul class="w3-ul w3-hoverable">
                         <li class="w3-padding-16">
                             <span> Hyderabad</span><br>
-                            <span> Bhubaneshwar</span><br>
+                            <span> Bengaluru</span><br>
                             <span> Chandigarh</span>
                         </li>
                     </ul>
@@ -96,7 +106,7 @@
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Mumbai</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">2BHK</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">3BHK</span>
-                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Banglore</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Bengaluru</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Hall</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">5K</span>
                         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Non AC</span>
